@@ -176,4 +176,27 @@ U ovom projektu telemetrijski trackeri klasificiraju se zasebno kako bi se razli
 
 Ova klasifikacija trackera omogućuje jasniju interpretaciju rezultata analize te pruža temelj za izračun intenziteta praćenja i vizualizaciju odnosa između web stranica i vanjskih servisa.
 
+---
+
+## 5. Forenzička analiza web prometa
+
+Forenzička analiza web prometa predstavlja sustavan i metodološki pristup proučavanju mrežnih komunikacija koje nastaju tijekom korištenja web stranica. U kontekstu web trackinga, cilj forenzičke analize nije samo promatranje prometa, već razumijevanje skrivenih mehanizama praćenja koji se odvijaju u pozadini korisničkog iskustva.
+
+Web tracking forensics usmjeren je na otkrivanje i analizu načina na koji web stranice i povezani vanjski servisi prikupljaju, razmjenjuju i obrađuju podatke o korisnicima. Ovakav pristup omogućuje dublji uvid u strukturu web ekosustava i odnose između različitih aktera uključenih u proces praćenja.
+
+Glavni ciljevi forenzičke analize web prometa u ovom projektu uključuju:
+- identifikaciju third-party servisa koji sudjeluju u učitavanju web stranica  
+- razumijevanje odnosa između posjećenih web stranica i vanjskih tracking domena  
+- kvantifikaciju razine praćenja kojoj je korisnik izložen tijekom pregledavanja interneta  
+
+Analiza se temelji na presretanju i obradi HTTP i HTTPS zahtjeva koji nastaju prilikom učitavanja web stranica. Svaki zahtjev predstavlja potencijalni izvor informacija o vrsti servisa, svrsi komunikacije i ulozi pojedine domene u procesu praćenja.
+
+U okviru ovog projekta posebna pažnja posvećena je analizi domena odredišta mrežnih zahtjeva. Identifikacijom domena koje ne pripadaju izravno posjećenoj web stranici moguće je razlikovati first-party i third-party komunikaciju. Third-party domene često ukazuju na prisutnost analitičkih alata, oglasnih mreža, društvenih mreža ili telemetrijskih servisa.
+
+Nakon identifikacije, svaki third-party zahtjev povezuje se s pripadajućom kategorijom trackera, poput analytics, advertising, social ili telemetry. Ova klasifikacija omogućuje semantičko razumijevanje prikupljenog prometa te olakšava daljnju analizu i usporedbu web stranica.
+
+Forenzička analiza također uključuje kvantitativni aspekt, pri čemu se mjeri broj third-party zahtjeva, broj jedinstvenih domena i raspodjela kategorija trackera po web stranicama. Na temelju tih podataka moguće je izračunati pokazatelje koji opisuju intenzitet praćenja korisnika.
+
+Rezultati forenzičke analize čine temelj za kasnije faze projekta, uključujući izračun tracking intensity score, izradu grafičkih prikaza odnosa između web stranica i trackera te vizualizaciju strukture web praćenja. Time se omogućuje jasniji i objektivniji uvid u razinu i složenost web trackinga u stvarnom okruženju.
+
 
