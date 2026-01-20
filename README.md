@@ -66,7 +66,7 @@ Projekt je podijeljen u više funkcionalnih cjelina:
 
 ---
 
-## Isporučivi rezultati (Deliverables)
+## Isporučivi rezultati
 
 1. Alat / framework za:
    - snimanje mrežnog prometa,
