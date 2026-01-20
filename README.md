@@ -79,12 +79,3 @@ Projekt je podijeljen u više funkcionalnih cjelina:
 
 ---
 
-## Moguća proširenja projekta
-
-- Automatizacija analize pomoću skripti i batch obrade.
-- Usporedba različitih browsera i njihovih privacy postavki.
-- Analiza razlika između prijavljenog i neprijavljenog korisnika.
-- Povezivanje rezultata s GDPR i ePrivacy regulativom.
-- Usporedba učinkovitosti različitih metoda detekcije trackera.
-
----
