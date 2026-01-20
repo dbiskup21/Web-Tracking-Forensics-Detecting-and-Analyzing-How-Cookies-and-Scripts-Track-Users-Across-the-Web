@@ -88,6 +88,3 @@ Projekt je podijeljen u više funkcionalnih cjelina:
 - Usporedba učinkovitosti različitih metoda detekcije trackera.
 
 ---
-
-## Struktura repozitorija
-
