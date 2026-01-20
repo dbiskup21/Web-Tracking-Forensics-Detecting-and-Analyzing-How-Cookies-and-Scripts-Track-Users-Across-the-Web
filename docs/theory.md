@@ -108,5 +108,72 @@ Za razliku od kolačića, fingerprinting je znatno teže blokirati i često se p
 Iako ovaj projekt ne provodi potpunu analizu fingerprintinga, tijekom analize mrežnog prometa uočeni su obrasci koji mogu ukazivati na fingerprinting-like ponašanje, poput učestalih zahtjeva s bogatim skupovima zaglavlja i parametara koji otkrivaju detaljne informacije o korisničkom okruženju.
 
 ---
+## 4. Kategorije trackera
+
+Kako bi se omogućila sustavna analiza mrežnog prometa i razumijevanje uloge pojedinih vanjskih servisa, u ovom projektu trackeri se klasificiraju u nekoliko kategorija. Klasifikacija se temelji na primarnoj svrsi trackera, vrsti podataka koje prikuplja te načinu na koji se ti podaci koriste.
+
+Razvrstavanje trackera u kategorije omogućuje jasniji uvid u strukturu web praćenja te olakšava procjenu intenziteta i potencijalnog utjecaja praćenja na privatnost korisnika.
+
+---
+
+### 4.1 Analytics
+
+Analytics trackeri služe za prikupljanje statističkih podataka o korištenju web stranica. Njihova primarna svrha je analiza ponašanja korisnika kako bi vlasnici web stranica mogli poboljšati sadržaj, funkcionalnost i korisničko iskustvo.
+
+Ovi trackeri obično prikupljaju podatke poput broja posjeta, trajanja sesije, pregledanih stranica, izvora prometa i osnovnih informacija o uređaju ili pregledniku. Iako se analytics trackeri često smatraju manje invazivnima u odnosu na oglasne trackere, oni i dalje omogućuju praćenje korisnika kroz vrijeme, osobito ako se koriste persistentni identifikatori.
+
+Primjeri analytics trackera uključuju:
+- Google Analytics, koji omogućuje detaljnu analizu korisničkog ponašanja
+- Google Tag Manager, koji služi kao posredni sloj za upravljanje različitim analitičkim i tracking skriptama
+
+U kontekstu ovog projekta, analytics trackeri identificiraju se kao third-party zahtjevi čija je primarna svrha statistička analiza, a ne izravno oglašavanje.
+
+---
+
+### 4.2 Advertising
+
+Advertising trackeri povezani su s oglasnim mrežama i sustavima za ciljanje korisnika. Njihova svrha je prikupljanje podataka koji se koriste za prikaz personaliziranih oglasa i mjerenje učinkovitosti oglašivačkih kampanja.
+
+Ovi trackeri često prikupljaju detaljnije podatke o korisničkom ponašanju, uključujući informacije o posjećenim web stranicama, interesima i interakcijama s oglasima. Budući da su iste oglasne mreže prisutne na velikom broju web stranica, advertising trackeri omogućuju cross-site praćenje korisnika.
+
+Primjeri advertising trackera uključuju:
+- DoubleClick, koji je dio Googleove oglasne infrastrukture
+- Amazon Ads, koji se koristi za ciljanje oglasa unutar i izvan Amazonovog ekosustava
+- različite adservice domene koje služe kao posrednici u isporuci oglasa
+
+Zbog svoje uloge u intenzivnom praćenju korisnika, advertising trackeri predstavljaju jedan od najvećih rizika za privatnost i često su u fokusu regulatornih ograničenja.
+
+---
+
+### 4.3 Social
+
+Social trackeri povezani su s društvenim mrežama i njihovim vanjskim integracijama. Oni se najčešće pojavljuju u obliku ugrađenih elemenata, poput gumba za dijeljenje sadržaja, widgeta ili pikselâ za praćenje.
+
+Ovi trackeri omogućuju društvenim mrežama prikupljanje podataka o korisničkoj aktivnosti čak i kada korisnik ne komunicira izravno s ugrađenim elementom. Na taj način moguće je povezati aktivnosti korisnika na različitim web stranicama s njegovim društvenim profilom.
+
+Primjeri social trackera uključuju:
+- Facebook tracking servise i piksele
+- Twitter tracking skripte
+- TikTok tracking endpointе
+
+U kontekstu privatnosti, social trackeri su posebno osjetljivi jer omogućuju povezivanje web aktivnosti s identitetom korisnika na društvenim mrežama.
+
+---
+
+### 4.4 Telemetry
+
+Telemetrijski trackeri prikupljaju tehničke podatke o radu aplikacija, preglednika i operativnih sustava. Njihova primarna svrha nije izravno praćenje korisničkog ponašanja, već praćenje performansi, stabilnosti i pouzdanosti sustava.
+
+Telemetrijski podaci mogu uključivati informacije o greškama, vremenu učitavanja, verzijama softvera i konfiguraciji sustava. Iako se telemetrija često smatra tehnički nužnom, ona također može sadržavati identifikatore koji omogućuju povezivanje podataka s određenim korisnikom ili uređajem.
+
+Primjeri telemetrijskih servisa uključuju:
+- Microsoft telemetry servise ugrađene u preglednike i operativne sustave
+- različite browser telemetry endpointe koji šalju podatke o performansama i greškama
+
+U ovom projektu telemetrijski trackeri klasificiraju se zasebno kako bi se razlikovali od trackera čija je primarna svrha oglašavanje ili analitika, ali se i dalje uzimaju u obzir prilikom procjene ukupne razine praćenja.
+
+---
+
+Ova klasifikacija trackera omogućuje jasniju interpretaciju rezultata analize te pruža temelj za izračun intenziteta praćenja i vizualizaciju odnosa između web stranica i vanjskih servisa.
 
 
