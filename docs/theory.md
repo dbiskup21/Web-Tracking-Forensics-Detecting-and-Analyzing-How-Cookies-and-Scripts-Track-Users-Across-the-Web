@@ -199,4 +199,44 @@ Forenzička analiza također uključuje kvantitativni aspekt, pri čemu se mjeri
 
 Rezultati forenzičke analize čine temelj za kasnije faze projekta, uključujući izračun tracking intensity score, izradu grafičkih prikaza odnosa između web stranica i trackera te vizualizaciju strukture web praćenja. Time se omogućuje jasniji i objektivniji uvid u razinu i složenost web trackinga u stvarnom okruženju.
 
+---
+
+## 6. Vizualizacija kao analitički alat
+
+Vizualizacija mrežnih odnosa predstavlja važan analitički alat u forenzičkoj analizi web prometa jer omogućuje intuitivno razumijevanje kompleksnih i višedimenzionalnih podataka. Umjesto promatranja pojedinačnih zapisa u tablicama ili bazama podataka, vizualizacija omogućuje sagledavanje cjelokupne strukture odnosa između web stranica, third-party domena i kategorija trackera.
+
+U kontekstu web trackinga, vizualizacija se temelji na grafovima koji se sastoje od čvorova i bridova. Čvorovi mogu predstavljati web stranice ili tracking domene, dok bridovi predstavljaju mrežne zahtjeve koji povezuju te entitete. Takav grafički prikaz omogućuje jasnu interpretaciju odnosa koji bi inače bili teško uočljivi u sirovim podacima.
+
+Vizualizacija mrežnih odnosa omogućuje lakše razumijevanje veza između:
+- web stranica koje korisnik posjećuje  
+- third-party domena koje sudjeluju u učitavanju sadržaja  
+- različitih kategorija trackera, poput analytics, advertising, social i telemetry  
+
+Grafički prikazi pomažu u identifikaciji dominantnih trackera, odnosno onih third-party domena koje se pojavljuju na velikom broju web stranica ili generiraju velik broj mrežnih zahtjeva. Takvi trackeri često imaju središnju ulogu u web ekosustavu i predstavljaju ključne točke praćenja korisnika.
+
+Jedna od važnih prednosti vizualizacije je mogućnost uočavanja centralnih čvorova unutar mreže. Centralni čvorovi su oni koji imaju velik broj veza prema drugim čvorovima, što može ukazivati na široko rasprostranjene tracking servise ili web stranice s izuzetno intenzivnim praćenjem. Analizom centralnosti čvorova moguće je identificirati najutjecajnije aktere u procesu web trackinga.
+
+Vizualizacija također omogućuje usporedbu intenziteta praćenja među različitim web stranicama. Web stranice koje su povezane s velikim brojem third-party domena ili s trackerima iz više kategorija mogu se lako razlikovati od onih s ograničenim ili minimalnim praćenjem. Time se omogućuje kvalitativna i kvantitativna usporedba razine praćenja.
+
+Osim analitičke vrijednosti, vizualizacija ima i komunikacijsku ulogu. Grafički prikazi omogućuju jasnu prezentaciju rezultata analize čak i osobama bez dubokog tehničkog znanja. Na taj način vizualizacija služi kao most između tehničke forenzičke analize i interpretacije rezultata u širem kontekstu privatnosti i sigurnosti korisnika.
+
+U ovom projektu vizualizacija se koristi kao završni korak analize, nadopunjujući numeričke pokazatelje i tablične podatke. Kombinacijom forenzičke analize i grafičke vizualizacije dobiva se cjelovit uvid u strukturu i intenzitet web trackinga.
+
+## 7. Zaključak teorijskog dijela
+
+Web tracking predstavlja sastavni i neizostavni dio modernog web ekosustava. Kroz različite tehničke mehanizme omogućuje prikupljanje podataka koji se koriste za poboljšanje funkcionalnosti web stranica, analizu korisničkog ponašanja i optimizaciju digitalnih usluga. Međutim, istovremeno predstavlja značajan izazov u kontekstu privatnosti i zaštite osobnih podataka korisnika.
+
+Analiza teorijskih aspekata web trackinga pokazuje da se praćenje provodi na više razina, uključujući first-party i third-party zahtjeve, različite mehanizme praćenja te širok raspon kategorija trackera. Posebno je naglašena uloga third-party trackera koji omogućuju praćenje korisnika kroz više web stranica i stvaranje detaljnih profila ponašanja.
+
+Razumijevanje mehanizama web praćenja i njihova analiza kroz mrežni promet omogućuju:
+- veću transparentnost u načinu na koji se korisnički podaci prikupljaju i koriste  
+- bolju informiranost korisnika o prisutnosti i ulozi trackera  
+- objektivnu evaluaciju privatnosnih rizika povezanih s korištenjem web stranica  
+
+Forenzički pristup analizi web prometa pruža metodološki okvir za identifikaciju i klasifikaciju trackera, kao i za kvantifikaciju razine praćenja kojoj su korisnici izloženi. Takav pristup omogućuje prelazak s apstraktnih rasprava o privatnosti na mjerljive i empirijski utemeljene rezultate.
+
+Teorijski dio ovog rada postavlja temelj za praktični dio projekta u kojem se navedeni koncepti primjenjuju na stvarnim podacima. Kroz prikupljanje mrežnog prometa, obradu podataka i vizualizaciju odnosa između web stranica i trackera, teorijski okvir se nadopunjuje konkretnom analizom web trackinga u realnom okruženju.
+
+Na taj način teorijski i praktični dio projekta čine cjelinu koja omogućuje dublje razumijevanje web trackinga, njegovih tehničkih implikacija i utjecaja na privatnost korisnika.
+
 
