@@ -115,6 +115,102 @@ Na temelju provedene analize može se zaključiti da:
 **Transparentnost prema korisniku:** Niska do umjerena
 
 ---
+## Fingerprinting – analiza i implikacije
+
+### Pojam fingerprintinga
+
+Fingerprinting predstavlja skup tehnika kojima web stranice i treće strane mogu
+prepoznati i pratiti korisnika bez oslanjanja na kolačiće, kombiniranjem tehničkih
+karakteristika preglednika i uređaja.
+
+Za razliku od klasičnih kolačića, fingerprinting je:
+- teže detektirati
+- teže blokirati
+- manje transparentan korisniku
+
+---
+
+### Fingerprinting indikatori u ovom projektu
+
+U okviru ovog projekta nije provedeno aktivno prikupljanje fingerprinting podataka
+na razini JavaScript koda, ali analiza mrežnog prometa omogućila je uočavanje
+ključnih indikatora koji se koriste kao temelj fingerprintinga.
+
+Uočeni su sljedeći elementi:
+
+- **User-Agent zaglavlje**
+  - tip i verzija preglednika
+  - operativni sustav i platforma
+  - arhitektura uređaja
+- **Telemetry i analytics endpointi**
+  - redovito slanje tehničkih podataka
+  - ponavljanje istih obrazaca na više web stranica
+- **Dosljedna prisutnost istih third-party domena**
+  - iste tracking domene pojavljuju se na velikom broju nepovezanih stranica
+- **Parametrizirani HTTP zahtjevi**
+  - tipični za beacon i collect mehanizme
+
+Kombinacijom navedenih podataka moguće je ostvariti stabilno prepoznavanje korisnika
+bez korištenja kolačića.
+
+---
+
+### Povezanost fingerprintinga i third-party trackera
+
+Analiza je pokazala da se velik broj tracking-capable servisa pojavljuje
+istovremeno na više različitih web stranica.
+
+Takva infrastruktura omogućuje:
+- povezivanje korisničke aktivnosti kroz različite domene
+- dugoročno praćenje korisnika
+- izgradnju ponašajnih profila
+
+Iako projekt ne rekonstruira identitet korisnika, jasno je vidljivo da mrežna
+infrastruktura podržava fingerprinting mehanizme.
+
+---
+
+### Što projekt nije izravno mjerio
+
+U ovom projektu nisu izravno analizirani sljedeći fingerprinting elementi:
+
+- rezolucija ekrana i DPI
+- instalirani fontovi
+- Canvas i WebGL fingerprinting
+- AudioContext fingerprinting
+- precizna geolokacija korisnika
+
+Navedeni podaci uobičajeno se prikupljaju putem JavaScript API-ja na strani klijenta
+te nisu vidljivi isključivo analizom HTTP/HTTPS prometa.
+
+---
+
+### Sigurnosne i privatnosne implikacije
+
+Rezultati analize ukazuju na to da fingerprinting:
+
+- ne zahtijeva izričit pristanak korisnika
+- može funkcionirati bez kolačića
+- koristi široko rasprostranjenu third-party infrastrukturu
+
+Zbog navedenog, fingerprinting predstavlja značajan izazov za zaštitu privatnosti
+korisnika i transparentnost obrade podataka.
+
+---
+
+### Zaključak o fingerprintingu
+
+Na temelju provedene analize može se zaključiti da:
+
+- fingerprinting je tehnički izvediv već na razini mrežnog prometa
+- third-party servisi omogućuju korelaciju aktivnosti korisnika
+- korisnici nemaju jasan uvid u opseg prikupljenih podataka
+
+Projekt *Web Tracking Forensics* uspješno pokazuje kako analiza mrežnog prometa
+otkriva temeljne mehanizme fingerprintinga i predstavlja dobru osnovu za daljnja
+istraživanja u području privatnosti i sigurnosti.
+
+
 
 ## Ograničenja analize
 
