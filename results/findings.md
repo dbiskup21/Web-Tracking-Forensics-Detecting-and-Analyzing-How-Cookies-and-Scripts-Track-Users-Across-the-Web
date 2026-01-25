@@ -14,6 +14,36 @@ Analiza je obuhvatila sljedeće aspekte sustava:
 
 Ukupno je analiziran promet prilikom posjeta **20 različitih web stranica** iz različitih kategorija (informativne, tražilice, e-commerce, edukacijske stranice).
 
+### Posjećene web stranice
+
+Analiza je provedena na prometu generiranom prilikom posjeta web stranicama iz
+različitih kategorija, uključujući:
+
+- https://www.google.com  
+- https://www.bing.com  
+- https://www.wikipedia.org  
+- https://www.chatgpt.com  
+- https://docs.google.com  
+- https://www.youtube.com  
+- https://www.reddit.com  
+- https://www.facebook.com  
+- https://www.instagram.com  
+- https://www.linkedin.com  
+- https://www.twitter.com (X)  
+- https://www.amazon.com  
+- https://www.ebay.com  
+- https://www.aliexpress.com  
+- https://www.nytimes.com  
+- https://www.bbc.com  
+- https://www.stackoverflow.com  
+- https://www.github.com  
+- https://www.medium.com  
+- https://www.coursera.org  
+
+Navedene stranice obuhvaćaju informativne portale, tražilice, društvene mreže,
+e-commerce platforme i edukacijske servise, čime je osigurana raznolikost
+analiziranog mrežnog prometa.
+
 ---
 
 ## Metodologija analize
