@@ -272,14 +272,3 @@ pouzdana osnova za daljnje sigurnosne i privatnosne analize u području web
 tehnologija.
 
 ---
-
-### Ograničenja analize
-
-Unatoč dobivenim rezultatima, analiza ima određena ograničenja. Trajanje kolačića
-(cookie lifetime) nije eksplicitno analizirano, već je fokus stavljen na mrežne
-zahtjeve i odredišne domene. Također, analiza je provedena unutar ograničenog
-vremenskog perioda pregledavanja web stranica, što može utjecati na potpunost
-uhvaćenih obrazaca ponašanja trackera.
-
-Navedena ograničenja ne umanjuju relevantnost dobivenih rezultata, već jasno
-definiraju opseg i kontekst provedene analize.
